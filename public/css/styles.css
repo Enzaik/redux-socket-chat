@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Roboto_Regular';
+  src: url('fonts/Roboto-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Roboto_Thin';
+  src: url('fonts/Roboto-Thin.ttf')
+}
+
+@font-face {
+  font-family: 'Roboto_Regular';
+  src: url('fonts/Roboto-Regular.ttf')
+}
+
+
+@font-face {
+  font-family: 'Google_Sans_Regular';
+  src: url('fonts/GoogleSans-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Product_Sans_Medium';
+  src: url('fonts/GoogleSans-Medium.ttf')
+}
+
+
+#app-root{
+   
+}
+
+
+#real{
+    font-family: 'Roboto_Regular';
+    list-style: none;
+}
+
+#real ul{
+    color:red;
+    font-family: 'Google_Sans_Regular';
+}
+
+ li{
+    font-family: 'Google_Sans_Regular';
+}
+
+#bigcont{
+    display: flex;
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Google_Sans_Regular';
+    color: #4285F4;
+}
+
+ul{
+
+        padding-left: 0%;
+}
+
+li{
+    font-family: 'Google_Sans_Regular';
+    padding:10px;
+    list-style: none;
+    padding-left: 5%;
+}
+
+li:hover{ 
+    cursor:pointer;    
+   /* box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);*/
+    background-color: #EEEEEE;
+}
+
+form{
+    position: fixed;
+    bottom: 10px;
+    right: 40%;
+    zoom: 1.4;
+}
+
+input{
+    background-color: #E7EAED;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    padding-left: 8px;
+    color: #76797B
+}
+
+button{
+    font-family: 'Google_Sans_Regular';
+    border-radius: 2px;
+    background-color: #76797B;
+    border: #76797B;
+    cursor:pointer;
+    background-color: white;
+}
+
+button:hover{
+    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+    
+}
+
+.histories{
+width: 100%;
+}
