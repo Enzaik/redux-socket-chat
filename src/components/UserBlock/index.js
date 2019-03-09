@@ -26,7 +26,7 @@ class UserBlock extends Component {
 :
 <div style={Styles.noDisplayInit}>
              
-      <RecipientSelector/>
+      <RecipientSelector/> 
 
         </div>
 ;

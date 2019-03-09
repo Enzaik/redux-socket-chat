@@ -24,7 +24,8 @@ class ConnectButton extends Component {
     };
 
     render() {
-        return <button style={this.connectEnabled() ? Styles.buttonStyle : Styles.disabledButtonStyle}
+        let connected = this.connectEnabled();
+        return <button class = {connected ? 'active': 'inactive'} style={this.connectEnabled() ? Styles.buttonStyle : Styles.disabledButtonStyle}
                        onClick={this.handleClick}
                        disabled={!this.connectEnabled()}>{this.props.connected ? 'Disconnect' : 'Connect'}</button>;
     }

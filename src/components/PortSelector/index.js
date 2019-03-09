@@ -6,6 +6,7 @@ import { Styles, UI } from '../../constants';
 
 // ACTIONS
 import { portChanged } from '../../store/socket/actions';
+import ConnectButton from '../Footer/ConnectButton.js';
 
 // Dropdown to select port number to connect to
 class PortSelector extends Component {
@@ -19,6 +20,8 @@ class PortSelector extends Component {
             <select name="selectPort" onChange={this.handlePortChange} disabled={this.props.connected}>
                 {UI.PORTS.map( (port, index) => <option value={port} key={index}>{port}</option>)}
             </select>
+        {!this.props.connected ? <ConnectButton/> : null}
+        
         </div>;
     }
 }

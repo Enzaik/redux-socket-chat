@@ -9,9 +9,8 @@ export const mainBlock = {
 export const clientStyle = {
     width: '100%',
     height: '500px',
-   
-    border: '1px solid #ACACAC',
-    borderRadius: '5px',
+    border: '1px solid rgb(172, 172, 172)',
+    borderRadius: '0.8rem',
     textAlign: 'left',
     backgroundColor: '#FCFCFC',
     color: '#00000',
@@ -25,23 +24,22 @@ display: 'none'
 
 
 export const clientStyleInit ={
+borderRadius: '0.8rem',
 marginLeft: '35%',
 width: '30%',
 border: '1px solid #ACACAC',
-borderRadius: '5px',
 textAlign: 'left',
 backgroundColor: '#FCFCFC',
 color: '#00000',
-fontFamily: "'Lato', 'PT Sans', Helvetica, sans-serif"
-
+paddingBottom: '15%'
 };
 
 
 export const userBlock = {
+    border: '1px solid rgb(172, 172, 172)',
+    borderRadius: '0.8rem',
     display: 'block',
     width: '50%',
-    border: '1px solid #ACACAC',
-    borderRadius: '5px',
     textAlign: 'left',
     backgroundColor: '#FCFCFC',
     color: '#00000',
@@ -52,8 +50,18 @@ export const userBlock = {
 export const footerStyle = {
     display: 'flex',
     flexDirection: 'row',
-    borderTop: '1px solid #ACACAC',
+    
+    
 };
+
+export const footerStyleInit = {
+    display: 'flex',
+    flexDirection: 'row',
+    paddingTop: '10%',
+    color: 'red'
+    
+};
+
 
 export const userList = {
     cursor: 'pointer',
@@ -63,19 +71,23 @@ export const userList = {
 };
 
 export const buttonStyle = {
-    backgroundColor: '#ffffff',
+    
     margin: '3px',
-    borderRadius: '5px',
-    border: '2px solid #9667ff',
     fontSize: '10px',
-    color: '#9667ff',
     padding: '5px',
-    cursor: 'pointer'
+    cursor: 'pointer',
+   // WebkitBoxShadow: '0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)',
+   // boxShadow: '0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)'
+    
+    
+    borderRadius: '.2rem'
 };
 export const disabledButtonStyle = Object.assign({}, buttonStyle, {
-    color: '#C3C3C3',
-    border: '2px solid #C3C3C3',
-    cursor: 'not-allowed'
+    
+    cursor: 'not-allowed',
+    
+    
+    borderRadius: '.2rem'
 });
 export const recipientStyle = {
     fontSize: '14px',
@@ -88,7 +100,7 @@ export const senderStyle = {
     padding: '5px 5px 0',
     color: '#c76499'};
 export const historyContainerStyle = {
-    borderTop: '1px solid #ccc',
+    
     height: '63.35%',
     width: '100%'
 };
@@ -105,14 +117,18 @@ export const statusStyle = {
     fontSize: '17px',
     lineHeight: '15px',
     padding: '10px 5px 0 5px',
-    color: 'green',
-    flexGrow: '2'
+    flexGrow: '2',
+    textAlign: 'center',
+    color: '#1A73E8',
+    fontFamily: 'Product_Sans_Bold'
 };
 export const errorStatusStyle = Object.assign({}, statusStyle, {
-    color: 'red'
+    color: '#EA4335',
+    textAlign: 'center'
 });
 export const fieldStyle = {
-    margin: '10px'
+    margin: '10px',
+    fontFamily: 'Google_Sans_Regular'
 };
 export const labelStyle = {
     marginRight: '10px'
