@@ -16,7 +16,7 @@ class HistoryBlock extends Component {
 
     // Render the component
     render() {
-        return <div class = 'histories' style={Styles.clientStyle}>
+        return (this.props.connected) ? <div class = 'histories' style={Styles.clientStyle}>
 
 
             <Footer/>
@@ -31,7 +31,26 @@ class HistoryBlock extends Component {
 
            
 
-        </div>;
+        </div>
+        :
+        <div class = 'histories' style={Styles.clientStyle}>
+
+
+            <Footer/>
+
+            <UserInput/>
+
+            <PortSelector/>           
+
+            <MessageHistory/>
+
+            <MessageTransport/>
+
+           
+
+        </div>
+        
+        ;
     }
 }
 

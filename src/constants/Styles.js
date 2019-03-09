@@ -20,12 +20,25 @@ export const clientStyle = {
 
 export const noDisplayInit = {
 
-  paddingLeft: '30%',
-  paddingRight: '30%'
+display: 'none'
+};
+
+
+export const clientStyleInit ={
+marginLeft: '35%',
+width: '30%',
+border: '1px solid #ACACAC',
+borderRadius: '5px',
+textAlign: 'left',
+backgroundColor: '#FCFCFC',
+color: '#00000',
+fontFamily: "'Lato', 'PT Sans', Helvetica, sans-serif"
+
 };
 
 
 export const userBlock = {
+    display: 'block',
     width: '50%',
     border: '1px solid #ACACAC',
     borderRadius: '5px',
