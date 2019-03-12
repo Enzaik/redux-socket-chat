@@ -3,30 +3,40 @@
   "version": "1.2.4",
   "description": "A React-based chat client for communicating with the node-multi-server-chat example",
   "scripts": {
-    "serve-client": "react-scripts start",
-    "start-server-1": "node server/src/server/socket-server.js server/src/server/config.json server-1;",
+    "start": "concurrently \"start-server-1\" \"serve-client\"",
+    "start2": "react-scripts start --browser=Chrome",
+    "start1": "node server/src/server/socket-server.js server/src/server/config.json server-1;",
     "start-server-2": "node server/src/server/socket-server.js server/src/server/config.json server-2;",
     "start-server-3": "node server/src/server/socket-server.js server/src/server/config.json server-3;",
     "start-server-4": "node server/src/server/socket-server.js server/src/server/config.json server-4;",
     "install-server-module": "git submodule init; npm run update-submodules; cd server; npm install",
-    "update-submodules": "git submodule update --remote --recursive"
+    "update-submodules": "git submodule update --remote --recursive",
+    "devserver": "live-server --browser=Chrome"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cliffhall/react-chat-client.git"
   },
   "dependencies": {
+    "concurrently": "^4.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^2.1.8",
     "redux": "^4.0.0",
-    "socket.io-client": "^1.5.1"
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
   },
   "author": "Cliff Hall",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cliffhall/react-chat-client/issues"
   },
-  "homepage": "https://github.com/cliffhall/react-chat-client#readme"
+  "homepage": "https://github.com/cliffhall/react-chat-client#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

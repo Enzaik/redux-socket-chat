@@ -9,7 +9,7 @@ function render() {
         <Provider store={store}>
             <Client/>
         </Provider>,
-        document.getElementById('app')
+        document.getElementById('app') 
     )
 }
 render();

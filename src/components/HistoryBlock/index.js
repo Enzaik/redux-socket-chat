@@ -17,7 +17,7 @@ class HistoryBlock extends Component {
 
     // Render the component
     render() {
-        return (this.props.users.length) ? <div class = 'histories' style={Styles.clientStyle}>
+        return (this.props.users.length) ? <div className = 'histories' style={Styles.clientStyle}>
 
 
             <Footer/>
@@ -34,7 +34,7 @@ class HistoryBlock extends Component {
 
         </div>
         :
-        <div class = 'histories' style={Styles.clientStyleInit}>
+        <div className = 'histories' style={Styles.clientStyleInit}>
 
 
             <Footer/>
